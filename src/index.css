@@ -17,6 +17,9 @@
     .main-btn {
         @apply bg-[#42b0d1] hover:bg-[#81d6e1] transition-all duration-300
     }
+    .skeleton {
+        @apply relative overflow-hidden bg-[#0a2955] after:bg-black after:absolute after:left-0 after:right-0 after:top-0 after:translate-x-[-100%] after:bg-gradient after:animate-shimmer
+    }
 }
 
 :root {

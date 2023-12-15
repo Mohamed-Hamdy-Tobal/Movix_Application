@@ -5,6 +5,9 @@ export default withMT ({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: ({
+        'gradient': 'linear-gradient(90deg, rgba(#193763, 0) 0, rgba(#193763, 0.2) 20%, rgba(#193763, 0.5) 60%, rgba(#193763, 0))', // Customize your gradient here
+      }),
       boxShadow: {
         main: '0 0 8px 2px #d1d0d0',
         mainHover: '0 0 9px 4px #d1d0d0',
@@ -23,10 +26,14 @@ export default withMT ({
           '0%' : {transform: 'translateX(0)'},
           '50%' : {transform: 'translateX(10px)'},
           '100%' : {transform: 'translateX(0)'},
+        },
+        shimmer : {
+          '100%': {transform:'translateX(100%)'},
         }
       },
       animation : {
         moveRight : 'moveRight 1s ease-in-out infinite', 
+        shimmer : 'shimmer 2s ease-in-out infinite', 
       },
       screens: {
         sm: '576px',

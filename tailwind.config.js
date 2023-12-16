@@ -6,6 +6,7 @@ export default withMT ({
   theme: {
     extend: {
       backgroundImage: ({
+        'main-gradient': 'linear-gradient(98.37deg, #f89e00 0.99 , #da2f58 100%)', 
         'gradient': 'linear-gradient(90deg, rgba(#193763, 0) 0, rgba(#193763, 0.2) 20%, rgba(#193763, 0.5) 60%, rgba(#193763, 0))', // Customize your gradient here
       }),
       boxShadow: {
@@ -15,24 +16,20 @@ export default withMT ({
         mainDarkHover: '0 0 8px 6px #0f2634',
       },
       colors: {
-        DME: '#2b3945',
-        DMB: '#202c37',
-        LMT: '#111517',
-        LMI: '#858585',
-        LMB: '#fafafa',
+        black: '#04152d',
+        black2: '#041226',
+        black3: '#020clb',
+        blackLighter: '#1c4b91',
+        blackLight: '#173d77',
+        pink: '#da2f68',
+        orange: '#f89e00',
       },
       keyframes : {
-        moveRight: {
-          '0%' : {transform: 'translateX(0)'},
-          '50%' : {transform: 'translateX(10px)'},
-          '100%' : {transform: 'translateX(0)'},
-        },
         shimmer : {
           '100%': {transform:'translateX(100%)'},
         }
       },
       animation : {
-        moveRight : 'moveRight 1s ease-in-out infinite', 
         shimmer : 'shimmer 2s ease-in-out infinite', 
       },
       screens: {

@@ -1,9 +1,9 @@
-// import { configureStore } from '@reduxjs/toolkit'
-// import countriesSlice from './Reducers/countriesSlice'
+import { configureStore } from '@reduxjs/toolkit'
+import homeSlice from './Reducers/homeSlice'
 
 
-// export const store = configureStore({
-//     reducer: {
-//         filterProducts: countriesSlice,
-//     },
-// })
+export const store = configureStore({
+    reducer: {
+        home: homeSlice,
+    },
+})

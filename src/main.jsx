@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { Root } from "./Layout/Root";
 import { ThemeProvider } from "@material-tailwind/react";
-// import { Provider } from "react-redux";
-// import { store } from "./Store/Store";
+import { Provider } from "react-redux";
+import { store } from "./Store/Store";
 
 
 const routes = createBrowserRouter([
@@ -24,9 +24,9 @@ const routes = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <Provider store={store}>
+  <Provider store={store}>
     <ThemeProvider>
       <RouterProvider router={routes} />
     </ThemeProvider>
-  // </Provider>
+  </Provider>
 );
